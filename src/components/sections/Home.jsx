@@ -3,18 +3,14 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
   useEffect(() => {
-    // Select the element with the typewriter animation
     const heading = document.querySelector(".animate-typewriter");
 
-    // Reset the animation by removing and adding the class
     const resetTypewriterAnimation = () => {
       heading.classList.remove("animate-typewriter");
-      // Trigger a reflow to restart the animation
-      void heading.offsetWidth; // This forces a reflow
+      void heading.offsetWidth; // Force reflow
       heading.classList.add("animate-typewriter");
     };
 
-    // Add event listener to reset animation when coming into view
     const handleScroll = () => {
       const rect = heading.getBoundingClientRect();
       if (rect.top <= window.innerHeight && rect.bottom >= 0) {
@@ -22,9 +18,7 @@ export const Home = () => {
       }
     };
 
-    // Add the scroll event listener to reset animation
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -33,34 +27,36 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20 py-10"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right animate-typewriter">
+        <div className="text-center z-10 max-w-4xl mx-auto">
+          {/* Responsive Headline */}
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight animate-typewriter">
             Hi, I'm Muhammad Ashaan
           </h1>
 
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I'm a UI/UX designer passionate about creating simple,
-            beautiful, and user-friendly designs. I focus on making sure users
-            have a smooth and enjoyable experience. I'm also excited to explore
-            mobile app development to bring my designs to life and reach more
-            users.
+          {/* Responsive Paragraph */}
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-8 max-w-2xl mx-auto px-2">
+            I'm a UI/UX designer passionate about creating simple, beautiful, and user-friendly designs. 
+            I focus on making sure users have a smooth and enjoyable experience. I'm also excited to explore 
+            mobile app development to bring my designs to life and reach more users.
           </p>
 
-          <div className="flex justify-center space-x-4">
+          {/* Responsive Button Group */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
             <a
               href="#projects"
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
+              className="w-full sm:w-auto bg-blue-500 text-white py-3 px-6 rounded font-medium transition 
+              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
+              className="w-full sm:w-auto border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all 
+              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10"
             >
               Contact Me
             </a>

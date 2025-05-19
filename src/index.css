@@ -7,7 +7,11 @@ body {
   font-family: "Space Grotesk", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-x: hidden; /* Prevent horizontal scroll on small screens */
 }
+
 
 @layer utilities {
   @keyframes blink {
@@ -71,3 +75,16 @@ body {
     border-color: transparent;
   }
 }
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 1.5s linear infinite;
+}
+
