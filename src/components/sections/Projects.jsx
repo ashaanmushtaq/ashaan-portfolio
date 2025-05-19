@@ -26,7 +26,7 @@ export const Projects = () => {
               Created Software Requirements Specification (SRS) document. 
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React Js", "Firebase", "Figma", "Python","Tensorflow","Star UML"].map((tech, key) => (
+                {["React Js","React Native", "Firebase", "Figma", "Python","Tensorflow","Star UML"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -57,16 +57,17 @@ export const Projects = () => {
             >
               <h3 className="text-xl font-bold mb-2">ACADEMIC PROJECTS</h3>
               <p className="text-gray-400 mb-4">
-              Worked on various software projects during university, 
-              including applications developed in courses like Object-Oriented 
-              Programming, Data Structures, and Web & Mobile Computing. Contributed 
-              to system design, documentation, and quality testing. Gained 
+              Worked on various software projects during university life cycle, 
+              including Student Registration System, Hospital Management System,
+              Medicine Tracker App, Online_Education App, Employee Management System, 
+              and more. Worked on system
+              documentation, quality testing, and software design projects. Gained 
               experience in team-based development, presentations, and 
               technical report writing.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Java", "React Js", "React Native", "Figma" ,"Frappe HR", 
-                "Cisco", "Signavio", "Visco"].map((tech, key) => (
+                {["Java","OOP","DSA", "React Js", "React Native","JavaScript", "Figma" ,"Frappe HR", 
+                "Cisco", "Signavio", "Visco", "Agile", "Firebase","MySQL"].map((tech, key) => (
                   <span
                     key={key}
                     className="

@@ -1,8 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "HTML", "CSS", "JavaScript", "TailwindCSS"];
-  const backendSkills = ["Node.js", "Python", "Firebase", "PHP", "MySQL"];
+  const frontendSkills = ["HTML", "CSS", "JavaScript", "React.js", "React Native", "TailwindCSS"];
+  const backendSkills = ["Node.js","Java", "Python", "Firebase", "PHP", "MySQL"];
 
   return (
     <section
@@ -17,9 +17,9 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              I’m a recent BS Software Engineering graduate with a growing
-              interest in React Native, UI/UX design, and ERP systems like
-              ERPNext and FrappeHR. I enjoy learning through hands-on projects
+              Motivated and passionate fresh graduate in BS Software Engineering with a growing
+              interest in React Native, UI/UX design, and ERP systems through academic projects 
+              and internships. I enjoy learning through hands-on projects
               and love building clean, user-friendly web and mobile apps.
               Though I’m still gaining experience, I’m excited to grow,
               contribute, and create solutions that are both effective and easy
@@ -81,8 +81,9 @@ export const About = () => {
                 </li>
                 <li>
                   Relevant Coursework: Object-Oriented Programming, Data
-                  Structures, Web Development, Mobile Computing, Artificial
-                  Intelligence, Machine Learning, Software Documentation, and
+                  Structures, Database, Web Development, Mobile Computing, 
+                  Data Communication & Computer Networks, Information Security,
+                  Artificial Intelligence, Machine Learning, Software Documentation, and
                   more.
                 </li>
               </ul>
@@ -93,7 +94,7 @@ export const About = () => {
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    BAHES TECH | Internship | July - Sept 2024
+                    BAHES TECH | Internship | July - Aug 2024
                   </h4>
                   <p>
                     Helped design and develop mobile app screens using React
